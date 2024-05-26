@@ -1,0 +1,237 @@
+
+body {
+    overflow: hidden;
+    background-image: url('assets/img/wallbg.jpg');
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+}
+
+.container {
+    max-width: 45vh;
+    max-height: 60vh;
+    margin: 0 auto;
+    margin-top: 2.5%;
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    background: black;
+    box-shadow: 0 10px 7px -5px rgba(0,0,0,0.3);
+    /* margin: 0;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+.mat {
+    position: absolute;
+    background: white;
+    left: 2.5%;
+    right: 2.5%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5) inset;
+}
+
+.art {
+    position: absolute;
+}
+
+.framedimg {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.framedimg:hover {
+    opacity: 0.7;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-top: 5%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 700px;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slide {
+    align-content: center;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 60vh;
+	overflow-x: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#arrow-left {
+	border-width: 20px 30px 20px 0;
+	border-color: transparent #000000 transparent transparent;
+	left: 0;
+	margin-left: 25%;
+    z-index: 1;
+}
+
+#arrow-right {
+	border-width: 20px 0 20px 30px;
+	border-color: transparent transparent transparent #000000;
+	right: 0;
+	margin-right: 25%;
+    z-index: 1;
+}
+
+p {
+    text-align: center;
+    font-family: 'Roboto Slab';
+}
+
+.clickto {
+    width: 100%;
+    top: 80vh;
+    font-size: small;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 320px;
+        max-height: 60vh;
+    }
+
+    #arrow-left {
+        margin-left: 2%;
+    }
+
+    #arrow-right {
+        margin-right: 2%;
+    }
+
+    .arrow {
+        top: 325px;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal {
+        padding-top: 25%;
+    }
+
+    .clickto {
+        top: 600px;
+    }
+
+    p {
+        position: static;
+        width: 100%;
+    }
+
+    .slide {
+        height: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .clickto {
+        top: 570px;
+    }
+
+    p {
+        top: 600px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        margin-top: 5.5%;
+    }
+
+    #arrow-left {
+        margin-left: 5%;
+    }
+
+    #arrow-right {
+        margin-right: 5%;
+    }
+
+    .arrow {
+        top: 475px;
+    }
+}

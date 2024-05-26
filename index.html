@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styling.css" />
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 1%;
+    }
+
+    @-moz-document url-prefix() {
+        html, body {
+            padding-top: 3%;
+        }
+    }
+
+    </style>
+
+    <!--Javascript -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="main.js"></script>
+    <!-- Favicons -->
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/twt-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/twt-icon.png"
+    /> -->
+
+    <!-- Animate CSS CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <title>Hyodal Exhibit</title>
+</head>
+
+<body>
+<h1>Hyodal Exhibit:</h1>
+<h1>Spain & France 2024</h1>
+<div class="container">
+    <div id="arrow-left" class="arrow"></div>
+    <div class="slide slide0">
+        <div class="frame frame0">
+            <div class="mat mat0">
+                <div class="art art0">
+                    <img class="framedimg" id="pic0" alt="hyodal at Casa Batlló" src="assets/img/IMG_7227.jpg">
+                    <div id="myModal0" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img0">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide1">
+        <div class="frame frame1">
+            <div class="mat mat1">
+                <div id="art-div" class="art art1">
+                    <img class="framedimg" id="pic1" alt="hyodal at the LEGO store" src="assets/img/IMG_7277.jpg">
+                    <div id="myModal1" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img1">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide2">
+        <div class="frame frame2">
+            <div class="mat mat2">
+                <div id="art-div" class="art art2">
+                    <img class="framedimg" id="pic2" alt="hyodal in front of La Sagrada Família" src="assets/img/IMG_7318.jpg">
+                    <div id="myModal2" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img2">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide3">
+        <div class="frame frame3">
+            <div class="mat mat3">
+                <div id="art-div" class="art art3">
+                    <img class="framedimg" id="pic3" alt="hyodal inside La Sagrada Família" src="assets/img/IMG_7328.jpg">
+                    <div id="myModal3" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img3">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide4">
+        <div class="frame frame4">
+            <div class="mat mat4">
+                <div id="art-div" class="art art4">
+                    <img class="framedimg" id="pic4" alt="hyodal inside La Sagrada Família" src="assets/img/IMG_7351.jpg">
+                    <div id="myModal4" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img4">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide5">
+        <div class="frame frame5">
+            <div class="mat mat5">
+                <div id="art-div" class="art art5">
+                    <img class="framedimg" id="pic5" alt="hyodal at Park Güell" src="assets/img/IMG_7395.jpg">
+                    <div id="myModal5" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img5">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide6">
+        <div class="frame frame6">
+            <div class="mat mat6">
+                <div id="art-div" class="art art6">
+                    <img class="framedimg" id="pic6" alt="hyodal at Park Güell" src="assets/img/IMG_7402.jpg">
+                    <div id="myModal6" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img6">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide7">
+        <div class="frame frame7">
+            <div class="mat mat7">
+                <div id="art-div" class="art art7">
+                    <img class="framedimg" id="pic7" alt="hyodal at Park Güell" src="assets/img/IMG_9977.jpg">
+                    <div id="myModal7" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img7">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide8">
+        <div class="frame frame8">
+            <div class="mat mat8">
+                <div id="art-div" class="art art8">
+                    <img class="framedimg" id="pic8" alt="hyodal in my bag" src="assets/img/IMG_7444.jpg">
+                    <div id="myModal8" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img8">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide9">
+        <div class="frame frame9">
+            <div class="mat mat9">
+                <div id="art-div" class="art art9">
+                    <img class="framedimg" id="pic9" alt="hyodal at the top of Montjuïc Castle" src="assets/img/IMG_7455.jpg">
+                    <div id="myModal9" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img9">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide10">
+        <div class="frame frame10">
+            <div class="mat mat10">
+                <div id="art-div" class="art art10">
+                    <img class="framedimg" id="pic10" alt="hyodal and his crab friend" src="assets/img/IMG_7498.jpg">
+                    <div id="myModal10" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img10">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide11">
+        <div class="frame frame11">
+            <div class="mat mat11">
+                <div id="art-div" class="art art11">
+                    <img class="framedimg" id="pic11" alt="hyodal under the sea" src="assets/img/IMG_7500.jpg">
+                    <div id="myModal11" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img11">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption11"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide12">
+        <div class="frame frame12">
+            <div class="mat mat12">
+                <div id="art-div" class="art art12">
+                    <img class="framedimg" id="pic12" alt="hyodal at the museum" src="assets/img/IMG_0074.jpg">
+                    <div id="myModal12" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img12">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide13">
+        <div class="frame frame13">
+            <div class="mat mat13">
+                <div id="art-div" class="art art13">
+                    <img class="framedimg" id="pic13" alt="hyodal eating crêpes" src="assets/img/IMG_7548.jpg">
+                    <div id="myModal13" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img13">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption13"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide14">
+        <div class="frame frame14">
+            <div class="mat mat14">
+                <div id="art-div" class="art art14">
+                    <img class="framedimg" id="pic14" alt="hyodal on canal de la Robine" src="assets/img/IMG_7553.jpg">
+                    <div id="myModal14" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img14">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption14"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide15">
+        <div class="frame frame15">
+            <div class="mat mat15">
+                <div id="art-div" class="art art15">
+                    <img class="framedimg" id="pic15" alt="hyodal looking at the Cathédrale Saint-Just et Saint-Pasteur" src="assets/img/IMG_7573.jpg">
+                    <div id="myModal15" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img15">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption15"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide16">
+        <div class="frame frame16">
+            <div class="mat mat16">
+                <div id="art-div" class="art art16">
+                    <img class="framedimg" id="pic16" alt="hyodal's view from the top of the dungeon" src="assets/img/IMG_7574.jpg">
+                    <div id="myModal16" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img16">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption16"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide17">
+        <div class="frame frame17">
+            <div class="mat mat17">
+                <div id="art-div" class="art art17">
+                    <img class="framedimg" id="pic17" alt="hyodal eating at Les Grands Buffets" src="assets/img/IMG_7613.jpg">
+                    <div id="myModal17" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img17">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption17"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide18">
+        <div class="frame frame18">
+            <div class="mat mat18">
+                <div id="art-div" class="art art18">
+                    <img class="framedimg" id="pic18" alt="hyodal at the train station" src="assets/img/IMG_7621.jpg">
+                    <div id="myModal18" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img18">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption18"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide19">
+        <div class="frame frame19">
+            <div class="mat mat19">
+                <div id="art-div" class="art art19">
+                    <img class="framedimg" id="pic19" alt="hyodal looking at bunny friend" src="assets/img/IMG_7623.jpg">
+                    <div id="myModal19" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img19">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption19"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide20">
+        <div class="frame frame20">
+            <div class="mat mat20">
+                <div id="art-div" class="art art20">
+                    <img class="framedimg" id="pic20" alt="hyodal in front of gare Saint-Jean" src="assets/img/IMG_7631.jpg">
+                    <div id="myModal20" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img20">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide21">
+        <div class="frame frame21">
+            <div class="mat mat21">
+                <div id="art-div" class="art art21">
+                    <img class="framedimg" id="pic21" alt="hyodal in front of the Grand-Théâtre" src="assets/img/IMG_7655.jpg">
+                    <div id="myModal21" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img21">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption21"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide22">
+        <div class="frame frame22">
+            <div class="mat mat22">
+                <div id="art-div" class="art art22">
+                    <img class="framedimg" id="pic22" alt="hyodal at the Miroir d'eau" src="assets/img/IMG_7702.jpg">
+                    <div id="myModal22" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img22">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption22"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide23">
+        <div class="frame frame23">
+            <div class="mat mat23">
+                <div id="art-div" class="art art23">
+                    <img class="framedimg" id="pic23" alt="hyodal at Les Bassins des Lumières" src="assets/img/IMG_7739.jpg">
+                    <div id="myModal23" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img23">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption23"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide24">
+        <div class="frame frame24">
+            <div class="mat mat24">
+                <div id="art-div" class="art art24">
+                    <img class="framedimg" id="pic24" alt="hyodal posing in front of Totoro" src="assets/img/IMG_7770.jpg">
+                    <div id="myModal24" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img24">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption24"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide25">
+        <div class="frame frame25">
+            <div class="mat mat25">
+                <div id="art-div" class="art art25">
+                    <img class="framedimg" id="pic25" alt="hyodal next to the drawing of him on an ema" src="assets/img/IMG_0562.jpg">
+                    <div id="myModal25" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img25">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption25"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide26">
+        <div class="frame frame26">
+            <div class="mat mat26">
+                <div id="art-div" class="art art26">
+                    <img class="framedimg" id="pic26" alt="hyodal at the Bread Festival in front of the Notre-Dame de Paris" src="assets/img/IMG_7799.jpg">
+                    <div id="myModal26" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img26">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption26"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide27">
+        <div class="frame frame27">
+            <div class="mat mat27">
+                <div id="art-div" class="art art27">
+                    <img class="framedimg" id="pic27" alt="hyodal eating Ladurée macarons (Pierre Hermé >>)" src="assets/img/IMG_7806.jpg">
+                    <div id="myModal27" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img27">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption27"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide28">
+        <div class="frame frame28">
+            <div class="mat mat28">
+                <div id="art-div" class="art art28">
+                    <img class="framedimg" id="pic28" alt="hyodal at jardin du Luxembourg" src="assets/img/IMG_7816.jpg">
+                    <div id="myModal28" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img28">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption28"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide29">
+        <div class="frame frame29">
+            <div class="mat mat29">
+                <div id="art-div" class="art art29">
+                    <img class="framedimg" id="pic29" alt="hyodal with the Eiffel Tower view 1" src="assets/img/IMG_7836.jpg">
+                    <div id="myModal29" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img29">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption29"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide30">
+        <div class="frame frame30">
+            <div class="mat mat30">
+                <div id="art-div" class="art art30">
+                    <img class="framedimg" id="pic30" alt="hyodal with the Eiffel Tower view 2" src="assets/img/IMG_7839.jpg">
+                    <div id="myModal30" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img30">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide31">
+        <div class="frame frame31">
+            <div class="mat mat31">
+                <div id="art-div" class="art art31">
+                    <img class="framedimg" id="pic31" alt="hyodal with the Eiffel Tower view 3" src="assets/img/IMG_7845.jpg">
+                    <div id="myModal31" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img31">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption31"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide32">
+        <div class="frame frame32">
+            <div class="mat mat32">
+                <div id="art-div" class="art art32">
+                    <img class="framedimg" id="pic32" alt="hyodal with the Eiffel Tower view 4 shrimp heart" src="assets/img/IMG_7847.jpg">
+                    <div id="myModal32" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img32">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption32"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide33">
+        <div class="frame frame33">
+            <div class="mat mat33">
+                <div id="art-div" class="art art33">
+                    <img class="framedimg" id="pic33" alt="hyodal with the Eiffel tower view 5" src="assets/img/IMG_0712.jpg">
+                    <div id="myModal33" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img33">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption33"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide34">
+        <div class="frame frame34">
+            <div class="mat mat34">
+                <div id="art-div" class="art art34">
+                    <img class="framedimg" id="pic34" alt="hyodal at the Louvre" src="assets/img/IMG_7875.jpg">
+                    <div id="myModal34" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img34">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption34"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide35">
+        <div class="frame frame35">
+            <div class="mat mat35">
+                <div id="art-div" class="art art35">
+                    <img class="framedimg" id="pic35" alt="hyodal at the Louvre" src="assets/img/IMG_7898.jpg">
+                    <div id="myModal35" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img35">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption35"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide36">
+        <div class="frame frame36">
+            <div class="mat mat36">
+                <div id="art-div" class="art art36">
+                    <img class="framedimg" id="pic36" alt="hyodal eating taiwanese food yum" src="assets/img/IMG_7908.jpg">
+                    <div id="myModal36" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img36">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption36"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide37">
+        <div class="frame frame37">
+            <div class="mat mat37">
+                <div id="art-div" class="art art37">
+                    <img class="framedimg" id="pic37" alt="hyodal eating somaek and peach oolong ice cream" src="assets/img/IMG_0835.jpg">
+                    <div id="myModal37" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img37">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption37"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide38">
+        <div class="frame frame38">
+            <div class="mat mat38">
+                <div id="art-div" class="art art38">
+                    <img class="framedimg" id="pic38" alt="hyodal eating vietnamese food yummy" src="assets/img/IMG_7929.jpg">
+                    <div id="myModal38" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img38">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption38"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide39">
+        <div class="frame frame39">
+            <div class="mat mat39">
+                <div id="art-div" class="art art39">
+                    <img class="framedimg" id="pic39" alt="hyodal at the Arc de Triomphe" src="assets/img/IMG_7937.jpg">
+                    <div id="myModal39" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img39">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption39"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide40">
+        <div class="frame frame40">
+            <div class="mat mat40">
+                <div id="art-div" class="art art40">
+                    <img class="framedimg" id="pic40" alt="hyodal in front of the ugly Paris 2024 olympics mascot" src="assets/img/IMG_7941.jpg">
+                    <div id="myModal40" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img40">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide41">
+        <div class="frame frame41">
+            <div class="mat mat41">
+                <div id="art-div" class="art art41">
+                    <img class="framedimg" id="pic41" alt="artist hyodal in the Petit Palais museum" src="assets/img/IMG_7959.jpg">
+                    <div id="myModal41" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img41">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption41"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide42">
+        <div class="frame frame42">
+            <div class="mat mat42">
+                <div id="art-div" class="art art42">
+                    <img class="framedimg" id="pic42" alt="hyodal at the top of Montmartre" src="assets/img/IMG_7980.jpg">
+                    <div id="myModal42" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img42">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption42"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide43">
+        <div class="frame frame43">
+            <div class="mat mat43">
+                <div id="art-div" class="art art43">
+                    <img class="framedimg" id="pic43" alt="hyodal in front of tiny door" src="assets/img/IMG_7993.jpg">
+                    <div id="myModal43" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img43">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption43"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide44">
+        <div class="frame frame44">
+            <div class="mat mat44">
+                <div id="art-div" class="art art44">
+                    <img class="framedimg" id="pic44" alt="hyodal posing with otter(?) friends" src="assets/img/IMG_7997.jpg">
+                    <div id="myModal44" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img44">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption44"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide45">
+        <div class="frame frame45">
+            <div class="mat mat45">
+                <div id="art-div" class="art art45">
+                    <img class="framedimg" id="pic45" alt="hyodal eating matcha desserts and gua bao" src="assets/img/IMG_8003.jpg">
+                    <div id="myModal45" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img45">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption45"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide46">
+        <div class="frame frame46">
+            <div class="mat mat46">
+                <div id="art-div" class="art art46">
+                    <img class="framedimg" id="pic46" alt="hyodal in the Galeries Lafayette" src="assets/img/IMG_8015.jpg">
+                    <div id="myModal46" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img46">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption46"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide47">
+        <div class="frame frame47">
+            <div class="mat mat47">
+                <div id="art-div" class="art art47">
+                    <img class="framedimg" id="pic47" alt="hyodal in the plane (bye bye)" src="assets/img/IMG_1262.jpg">
+                    <div id="myModal47" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img47">
+                        <!-- Modal Caption (Image Text) -->
+                        <div class="caption" id="caption47"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="arrow-right" class="arrow"></div>
+</div>
+<p class="clickto">click to enlarge picture and read description</p>
+<p>by sunfilis</p>
+
+</body>
+
+</html>
